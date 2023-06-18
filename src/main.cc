@@ -5,8 +5,8 @@
 #include "absl/flags/parse.h"
 #include "absl/strings/str_cat.h"
 #include "grpcpp/grpcpp.h"
-#include "lib.h"
-#include "service.h"
+#include "src/lib.h"
+#include "src/service.h"
 
 ABSL_FLAG(int, port, 8080, "Port to listen on.");
 

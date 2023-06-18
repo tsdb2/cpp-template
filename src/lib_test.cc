@@ -1,4 +1,4 @@
-#include "lib.h"
+#include "src/lib.h"
 
 #include "gtest/gtest.h"
 

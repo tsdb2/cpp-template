@@ -2,8 +2,8 @@
 #define __TSDB2_TEMPLATE_SERVICE_H__
 
 #include "grpcpp/grpcpp.h"
-#include "service.grpc.pb.h"
-#include "service.pb.h"
+#include "src/service.grpc.pb.h"
+#include "src/service.pb.h"
 
 namespace tsdb2 {
 

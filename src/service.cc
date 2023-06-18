@@ -1,8 +1,8 @@
-#include "service.h"
+#include "src/service.h"
 
 #include "grpcpp/grpcpp.h"
-#include "service.grpc.pb.h"
-#include "service.pb.h"
+#include "src/service.grpc.pb.h"
+#include "src/service.pb.h"
 
 namespace tsdb2 {
 
