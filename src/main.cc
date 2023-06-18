@@ -3,6 +3,7 @@
 
 #include "absl/flags/flag.h"
 #include "absl/flags/parse.h"
+#include "absl/log/initialize.h"
 #include "absl/strings/str_cat.h"
 #include "grpcpp/grpcpp.h"
 #include "src/lib.h"
@@ -11,6 +12,7 @@
 ABSL_FLAG(int, port, 8080, "Port to listen on.");
 
 int main(int const argc, char* argv[]) {
+  absl::InitializeLog();
   absl::ParseCommandLine(argc, argv);
 
   std::cout << ::tsdb2::Collatz(42) << std::endl;
