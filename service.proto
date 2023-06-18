@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package tsdb2;
+
+message FooRequest { optional int64 foo = 1; }
+
+message FooResponse { optional int64 bar = 1; }
+
+service FooService {
+  rpc Foo(FooRequest) returns (FooResponse) {}
+}
